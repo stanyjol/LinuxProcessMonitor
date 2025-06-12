@@ -1,0 +1,10 @@
+# /etc/systemd/system/process_monitor_restart.timer
+[Unit]
+Description=Timer to restart Process Monitoring Service 1 hour after every midnight
+
+[Timer]
+OnCalendar=*-*-* 01:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
