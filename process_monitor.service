@@ -1,0 +1,13 @@
+# /etc/systemd/system/process_monitor.service
+[Unit]
+Description=Process Monitoring Service (restarted by timer)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/process_monitor
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
