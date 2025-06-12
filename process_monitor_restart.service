@@ -1,0 +1,11 @@
+# /etc/systemd/system/process_monitor_restart.service
+[Unit]
+Description=Monitor Processes Service
+# Add any dependencies or other unit settings here
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl restart process_monitor.service
+
+[Install]
+WantedBy=multi-user.target
