@@ -27,14 +27,14 @@ func main() {
 
     // Handle help and version flags
     if *helpFlag {
-        fmt.Println("process monitoring program")
+        fmt.Println("Process monitoring")
         fmt.Println("-v version")
         return
     }
 
     if *versionFlag {
-        fmt.Println("process monitoring program")
-        fmt.Println("Daniel Staniek, TietoEvry - version", version)
+        fmt.Println("Process monitoring")
+        fmt.Println("Daniel Staniek, version", version)
         return
     }
 
