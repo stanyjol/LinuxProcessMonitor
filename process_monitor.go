@@ -13,7 +13,7 @@ import (
     "github.com/shirou/gopsutil/process"
 )
 
-const version = "2025-04-07a"
+const version = "2025-06-17a"
 
 func main() {
     // Define command-line flags
